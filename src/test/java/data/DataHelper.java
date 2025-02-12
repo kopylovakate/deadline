@@ -15,6 +15,7 @@ public class DataHelper {
     }
 
     public static AuthInfo getAuthInfo() {
+
         return new AuthInfo("vasya", "qwerty123");
     }
 
@@ -29,6 +30,7 @@ public class DataHelper {
     }
 
     public static AuthInfo getRandomUser() {
+
         return new AuthInfo(getRandomLogin(), getRandomPassword());
     }
 

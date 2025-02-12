@@ -29,7 +29,7 @@ public class AuthTest {
 
     @Test
     public void shouldInvalidLogin() {
-        var loginPage = open("http://localhost:9999", LoginPage.class);
+        var loginPage =open("http://localhost:9999", LoginPage.class);
         var authInfo = DataHelper.getRandomUser();
         loginPage.validLogin(authInfo);
         loginPage.getErrorMessage("Ошибка! " + "Неверно указан логин или пароль");
